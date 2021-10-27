@@ -6,7 +6,7 @@ serverSocket = socket(AF_INET, SOCK_STREAM)
 #Fill in start
 serverPort=6969
 
-serverSocket.bind(('64.141.84.26', serverPort))#you can change the ip
+serverSocket.bind(('127.0.0.1', serverPort))#you can change the ip
 serverSocket.listen(5)
 #Fill in end
 while True:
