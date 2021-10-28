@@ -1,10 +1,10 @@
 from socket import *
 
-serverName = '127.0.0.1'
-serverPort = 6969
+serverName = '10.6.70.200'
+serverPort = 1435
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName, serverPort))
-outputdata = 'GET /hello.html HTTP/1.1\r\nHost: 127.0.0.1\r\n\r\n'
+outputdata = 'GET /index.html HTTP/1.1\r\nHost: 10.6.70.200\r\n\r\n'
 clientSocket.send(outputdata.encode())
 data = 1
 while data:
